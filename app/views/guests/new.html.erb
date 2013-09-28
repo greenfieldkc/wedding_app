@@ -1,0 +1,23 @@
+<h1>Guest New</h1>
+
+<div>
+	<%= form_for(@guest) do |f| %>
+	    <%= render 'shared/error_messages', object: f.object %>
+	
+		<%= f.label :last_name %>
+		<%= f.text_field :last_name %>
+		
+		<%= f.label :first_name %>
+		<%= f.text_field :first_name %>
+		
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+		
+		<%= f.label :num_attending %>
+		<%= f.select :num_attending, 
+				options_for_select([["Not Attending", 0], ["One", 1],["Two", 2],["Three", 3], ["Four", 4]]) %>
+			
+		<%= f.submit "RSVP" %>
+		
+	<% end %>
+</div>

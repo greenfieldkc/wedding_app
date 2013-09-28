@@ -1,0 +1,14 @@
+<h1> Guest Index Page</h1>
+
+<ul>
+<% @alph_list.each do |g| %>
+	<li><%= "#{g.last_name}, #{g.first_name}, #{g.num_attending} attending." %></li>
+	<% end %>
+</ul>
+
+<p><%= Guest.count %> guests have responded.
+	
+<p><%= @head_count %> people attending.</p>
+	
+	
+	

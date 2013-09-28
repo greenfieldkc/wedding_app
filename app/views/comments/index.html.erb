@@ -1,0 +1,26 @@
+<h1>Guest Book</h1>
+
+<h2>Post a Comment</h2>
+<%= form_for(@comment) do |f| %>
+	<%= render 'shared/error_messages', object: f.object %>
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+	
+	<%= f.label :message %>
+	<%= f.text_area :message %>
+	
+	<%= f.submit "Submit Message" %>
+	
+<% end %>
+
+
+<h2> Guest Book Comment List</h2>
+<div>
+	<ul>
+	<% Comment.find(:all).each do |c| %>
+		<li><%="#{c.guest.first_name} #{c.guest.last_name} writes:"%>
+		<%= c.message %></li>
+	<% end %>
+	</ul>
+</div>	
+		
