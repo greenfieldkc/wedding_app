@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+group :production do
+  guest = Guest.create last_name: 'Sample', first_name: 'Joe', email: 'joe@sample.com', num_attending: 2
+  comment = Comment.create guest_id: 1, message: 'This is a sample guest book message.', email: 'joe@sample.com'
+end
