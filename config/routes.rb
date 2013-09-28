@@ -1,4 +1,5 @@
 KaraWedding::Application.routes.draw do
+  root 'guests#new'
   resources :comments
   resources :guests
   get "static_pages/our_story"
