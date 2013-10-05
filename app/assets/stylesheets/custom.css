@@ -160,11 +160,11 @@ h2 {
 }
 
 .ceremony-box {
-  position: absolute
+  position: absolute ;
   color: #176e91 ;
   background-color: rgba(253,215,215,0.75) ;
   margin-left: 0px ;
-  margin-top 160px ;
+  margin-top: 160px ;
   width:530px;
   height: 110px;
   border-radius: 5% ;
@@ -178,7 +178,7 @@ h2 {
 }
 
 .ceremony-box-sub {
-  position: absolute
+  position: absolute ;
   color: #176e91 ;
   background-color: rgba(253,215,215,0.75) ;
   margin-left: 80px ;
@@ -302,7 +302,7 @@ h2 {
 
 
 .story-box-sub {
-  position: absolute
+  position: absolute ;
   color: #176e91 ;
   margin-left: 80px ;
   margin-top: 150px ;
@@ -349,7 +349,7 @@ h2 {
 }
 
 .photo-select {
-	margin-left: 80px
+	margin-left: 80px ;
 	display: inline ;
 }
 
