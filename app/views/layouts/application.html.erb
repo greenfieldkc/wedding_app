@@ -3,6 +3,7 @@
 <head>
   <title>KaraWedding</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <link rel="stylesheet" type="text/css" href="custom.css" />
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -11,7 +12,7 @@
 	      <% flash.each do |key, value| %>
 	        <div class="alert alert"><%= value %></div>
 	      <% end %></div>
-	<%= render 'layouts/header' %>
+	      <%= render '/layouts/header' %>
 <%= yield %>
 
 </body>

@@ -1,10 +1,12 @@
-<ul>
-	<li><%= link_to "Admin", guests_path %></li>
-	<li><%= link_to "RSVP", new_guest_path %></li>
-	<li><%= link_to "Guest Book", comments_path %></li>
-	<li><%= link_to "Our Story", "/static_pages/our_story" %></li>
-	<li><%= link_to "Registry", "/static_pages/registry" %></li>
-	<li><%= link_to "Ceremony", "/static_pages/ceremony" %></li>
-	
-</ul>
-	
+	<header>
+	  <nav>
+	    <ul id="menu"> 
+	      <li><%= link_to "Our Story", "/static_pages/our_story"%></li>|
+	      <li><%= link_to "Ceremony", "/static_pages/ceremony"%></li>|
+	      <li><%= link_to "Registry", "/static_pages/registry"%></li>|
+	      <li><%= link_to "Guest Book", comments_path %></li>|
+		  <li><%= link_to "Photos", "/static_pages/photos" %></li>|
+	      <li><%= link_to "RSVP", new_guest_path %></li>
+	    </ul>
+	  </nav>
+	</header>

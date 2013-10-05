@@ -11,4 +11,16 @@
 <p><%= @head_count %> people attending.</p>
 	
 	
+	____________
+	<p>Guest Book Section...
+	</p>
+	<h2> Guest Book Comment List</h2>
 	
+	<div>
+		<ul>
+		<% Comment.find(:all).each do |c| %>
+			<li><%="#{c.guest.first_name} #{c.guest.last_name} writes:"%>
+			<%= c.message %></li>
+		<% end %>
+		</ul>
+	</div>	

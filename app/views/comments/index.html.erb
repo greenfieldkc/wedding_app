@@ -1,26 +1,19 @@
-<h1>Guest Book</h1>
+<body class="background2">
+<h1 class="home">Guest Book</h1>
 
+We're looking forward to celebrating with you or something like that...
 <h2>Post a Comment</h2>
+<div class='guest-book'>
 <%= form_for(@comment) do |f| %>
 	<%= render 'shared/error_messages', object: f.object %>
-	<%= f.label :email %>
-	<%= f.text_field :email %>
+	<p><span><%= f.label :email %></span>
+	<%= f.text_field :email %></p>
 	
-	<%= f.label :message %>
-	<%= f.text_area :message %>
+	<p><span><%= f.label :message %></span>
+	<%= f.text_area :message, :size => '20x10' %></p>
 	
-	<%= f.submit "Submit Message" %>
-	
+	<div class="comment-button"><%= f.submit "Submit Message" %></div>
+</div>	
 <% end %>
 
 
-<h2> Guest Book Comment List</h2>
-<div>
-	<ul>
-	<% Comment.find(:all).each do |c| %>
-		<li><%="#{c.guest.first_name} #{c.guest.last_name} writes:"%>
-		<%= c.message %></li>
-	<% end %>
-	</ul>
-</div>	
-		

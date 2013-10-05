@@ -1,23 +1,31 @@
-<h1>Guest New</h1>
+<body class="background1">
 
-<div>
-	<%= form_for(@guest) do |f| %>
-	    <%= render 'shared/error_messages', object: f.object %>
-	
-		<%= f.label :last_name %>
-		<%= f.text_field :last_name %>
-		
-		<%= f.label :first_name %>
-		<%= f.text_field :first_name %>
-		
-		<%= f.label :email %>
-		<%= f.text_field :email %>
-		
-		<%= f.label :num_attending %>
-		<%= f.select :num_attending, 
-				options_for_select([["Not Attending", 0], ["One", 1],["Two", 2],["Three", 3], ["Four", 4]]) %>
-			
-		<%= f.submit "RSVP" %>
-		
-	<% end %>
-</div>
+
+  <h1 class="home">John and Kara</h1>
+  
+  <h2>May 24, 2014</h2>
+
+  <div class='rsvp'>
+	<h3>RSVP</h3>
+  	<%= form_for(@guest) do |f| %>
+  	    <%= render 'shared/error_messages', object: f.object %>
+  	
+  		<p><span><%= f.label :last_name %></span>
+  		<%= f.text_field :last_name %></p>
+  		
+  		<p><span><%= f.label :first_name %></span>
+  		<%= f.text_field :first_name %></p>
+  		
+  		<p><span><%= f.label :email %></span>
+  		<%= f.text_field :email %></p>
+  		
+  		<p><span><%= f.label :num_attending %></span>
+  		<%= f.select :num_attending, 
+  				options_for_select([["Not Attending", 0], ["One", 1],["Two", 2],["Three", 3], ["Four", 4]]) %>
+  		</p>	
+  		<div class='rsvp-button'><%= f.submit "RSVP" %></div>
+  		
+  	<% end %>
+  </div>
+  
+</body>
