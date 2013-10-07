@@ -1,3 +1,7 @@
+body {
+	background-color: lightgrey;
+}
+
 /*background settings */
 .background1 {
   background-image:url("Greenfield_Burgner-Lusk-01.jpg") ;
@@ -74,6 +78,11 @@ nav ul li a:visited {
   text-decoration: none ;
 }
 
+nav ul li a:hover {
+  text-decoration: underline ;
+  font-weight: bold ;
+}
+
 h1.home {
   position: absolute ;
   font-family: cursive ;
@@ -135,12 +144,27 @@ h2 {
 }
 
 .rsvp-button {
-  position: absolute ;
-  margin-bottom: 30px ;
-  color: darkgrey ;
-  border-radius: 5%	
+  margin-top: -20px ;
+  margin-bottom: 20px ;
+}
+
+.rsvp-button input {
+  position: absolute;
+  height: 60px ;
+  width: 320px;
+  color: lightgrey ;
+  border-radius: 5%	;
+  font-family: cursive ;
+  font-weight: bold ;
+  font-size: 30px ;
+  color: #293640 ;
+  background-color:#7aa3bf ;
 }	
 
+.rsvp-button input:hover {
+  border: 1px solid grey ;
+  background-color: #93c3e5 ;
+}
 
 /* Ceremony Page */	
 .left-text {
@@ -222,10 +246,10 @@ h2 {
   background-color:rgba(253,215,215,0.25) ;
   border: 2px solid grey ;
   border-radius: 5% ;
-  height: 320px ;
+  height: 220px ;
   width: 350px;
   overflow: auto ;
-  padding: 10px;
+  padding: 40px 10px 10px 10px;
 }
 
 .guest-book input {
@@ -265,12 +289,23 @@ h2 {
   margin-right: 10px ;
 }
 
-.comment-button {
-  position: absolute ;
-  margin-bottom: 30px ;
-  color: darkgrey ;
-  border-radius: 5% ;
-  clear: both ;
+.comment-button input {
+  position: absolute;
+  height: 60px ;
+  width: 374px;
+  color: lightgrey ;
+  border-radius: 5%	;
+  font-family: cursive ;
+  font-weight: bold ;
+  font-size: 30px ;
+  color: #135b77 ;
+  background-color:#7aa3bf ;
+  margin: 480px 0px 20px 80px ;
+}	
+
+.comment-button input:hover {
+  border: 1px solid grey ;
+  background-color: #93c3e5 ;
 }
 
 /* Our Story */
@@ -378,3 +413,58 @@ h2 {
 	border: 1px solid grey;
 	border-radius: 5% ;
 }
+
+
+/*admin page*/
+.guest-count {
+	display: inline ;
+	border-radius: 5% ;
+	background-color: #93c3e5 ;
+	font-size: 20px ;
+	margin: 20px ;
+	padding: 20px ;
+}
+
+.number-circle {
+	font-size: 30px ;
+	padding: 10px ;
+	border-radius: 80% ;
+	width: 80px ;
+	background-color: #e9aead ;
+	color: #415665 ;
+	display: inline ;
+}
+
+.admin-font {
+	color: #415665 ;
+	font-family: Garamond ;
+}
+
+.guest-comments {
+	color: #415665 ;
+	font-family: Garamond;
+	list-style-type: none ;
+}
+
+.guest-comments li {
+	margin-top: 20px ;
+}
+
+.guest-comments li span {
+	font-size: 1.1em ;
+	font-weight: bold ;
+	word-wrap: break-word ;
+	margin-right: 5px ;
+}
+
+.attendees {
+	margin-top: 30px ;
+	color: #415665 ;
+	font-family: Garamond;
+	border: 1px solid grey ;
+	padding: 10px ;
+}
+.attendees td {
+	padding: 5px 10px 5px 10px ;
+}
+	

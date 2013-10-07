@@ -1,25 +1,27 @@
-<h1> Guest Index Page</h1>
+<h1 class='admin-font'> Guest Index Page</h1>
 
-<ul>
+  <div class="guest-count">
+      <div class="number-circle"><%= Guest.count %></div>responses.
+  </div>
+  <div class="guest-count">
+  	  <div class="number-circle"><%= @head_count %></div>people attending.
+  </div>
+
+<table class='attendees'> 
+	<th>Name</th>
+	<th># Attending</th>
 <% @alph_list.each do |g| %>
-	<li><%= "#{g.last_name}, #{g.first_name}, #{g.num_attending} attending." %></li>
+    <tr><td><%= "#{g.last_name}, #{g.first_name}"%></td><td><%="#{g.num_attending} attending" %></td></tr>
 	<% end %>
-</ul>
+</table>
+	
 
-<p><%= Guest.count %> guests have responded.
-	
-<p><%= @head_count %> people attending.</p>
-	
-	
-	____________
-	<p>Guest Book Section...
-	</p>
-	<h2> Guest Book Comment List</h2>
+	<h1 class='admin-font'> Guest Book Comment List</h1>
 	
 	<div>
-		<ul>
+		<ul class='guest-comments'>
 		<% Comment.find(:all).each do |c| %>
-			<li><%="#{c.guest.first_name} #{c.guest.last_name} writes:"%>
+			<li><span><%="#{c.guest.first_name} #{c.guest.last_name} writes:"%></span>
 			<%= c.message %></li>
 		<% end %>
 		</ul>

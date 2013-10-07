@@ -19,11 +19,11 @@
   		<p><span><%= f.label :email %></span>
   		<%= f.text_field :email %></p>
   		
-  		<p><span><%= f.label :num_attending %></span>
+  		<p><span><%= f.label :num_attending, "# Attending" %></span>
   		<%= f.select :num_attending, 
   				options_for_select([["Not Attending", 0], ["One", 1],["Two", 2],["Three", 3], ["Four", 4]]) %>
   		</p>	
-  		<div class='rsvp-button'><%= f.submit "RSVP" %></div>
+  		<div class='rsvp-button'><%= f.submit "Submit Response" %></div>
   		
   	<% end %>
   </div>
