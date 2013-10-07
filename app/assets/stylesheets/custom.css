@@ -2,6 +2,29 @@ body {
 	background-color: lightgrey;
 }
 
+.alert-flash-error {
+	background-color: red ;
+	height: 30px ;
+}
+
+.alert-flash-notice {
+	background-color: lightgrey ;
+	height: 30px ;
+}
+
+.alert-flash-success {
+	background-color: green ;
+	height: 30px ;
+}
+
+.alert-alert-error {
+	position: absolute ;
+	display: inline ;
+	background-color: red ;
+	margin-top: -50px ;
+	margin-left: 400px ;
+}
+
 /*background settings */
 .background1 {
   background-image:url("Greenfield_Burgner-Lusk-01.jpg") ;

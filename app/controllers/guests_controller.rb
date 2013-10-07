@@ -16,11 +16,11 @@ class GuestsController < ApplicationController
       if @guest.num_attending == 0
         flash[:notice] = "Thank you for responding. We're sorry you can't come, but we really only invited you out of social obligation anyway, so it's not a big deal."
       else
-        flash[:notice] = "Thank you for responding. See you at the wedding!"
+        flash[:success] = "Thank you for responding. See you at the wedding!"
       end
-      redirect_to guests_path
+      redirect_to comments_path
     else
-      flash[:notice] = "RSVP not recorded"
+      flash[:error] = "RSVP not recorded"
       render new_guest_path
     end
     
