@@ -1,4 +1,6 @@
 class GuestsController < ApplicationController
+  http_basic_authenticate_with :name => "guest", :password => "maddie"
+  
   def index
   @head_count = get_head_count
   @alph_list = alphabetize_guests
