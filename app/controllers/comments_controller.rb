@@ -5,12 +5,12 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = Comment.new(comment_params)
-    @comment.guest_id = Guest.find_by_email(@comment.email).id unless Guest.find_by_email(@comment.email) == nil
-    if @comment.guest_id == nil
-      flash[:error] = "The email entered does not match our list. Please RSVP before writing a message."
-      redirect_to comments_path
-    else
+   @comment = Comment.new(comment_params)
+   @comment.guest_id = Guest.find_by_email(@comment.email).id unless Guest.find_by_email(@comment.email) == nil
+   if @comment.guest_id == nil
+     flash[:error] = "The email entered does not match our list. Please RSVP before writing a message."
+     redirect_to comments_path
+   else
       if @comment.save
         flash[:success] = "Thank you for your message. Don't forget to buy us a gift!"
         redirect_to "/static_pages/registry"
