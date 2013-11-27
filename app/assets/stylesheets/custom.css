@@ -134,11 +134,16 @@ h2 {
   border-radius: 2% ;
 }
 
-.rsvp-button {
+.rsvp input[type="submit"] {
   position: absolute ;
-  margin-bottom: 30px ;
-  color: darkgrey ;
-  border-radius: 5%	
+  height: 60px ;
+  width: 320px;
+  font-family: cursive ;
+  font-weight: bold ;
+  font-size: 30px ;
+  color: #293640 ;
+  border-radius: 5%	;
+  background-color: #93c3e5 ;
 }	
 
 
@@ -253,7 +258,7 @@ h2 {
 }
 
 .guest-book form {
-  margin-top: -40px ;
+  margin-top: 0px ;
 }
 .guest-book p {
   padding: 20px 5px 10px 10px ;
@@ -265,10 +270,21 @@ h2 {
   margin-right: 10px ;
 }
 
+.guest-book input[type="submit"] {
+  position: absolute ;
+  height: 60px ;
+  width: 320px;
+  font-family: cursive ;
+  font-weight: bold ;
+  font-size: 30px ;
+  color: #176e91 ;
+  border-radius: 5%	;
+  background-color: #93c3e5 ;
+  margin-top: 100px ;
+}
 .comment-button {
   position: absolute ;
   margin-bottom: 30px ;
-  color: darkgrey ;
   border-radius: 5% ;
   clear: both ;
 }
@@ -340,6 +356,7 @@ h2 {
 	position: absolute ;
 	margin-left: 650px ;
 	margin-top: 20px ;
+	margin-right: 40px ;
 	display: inline ;
 }
 
@@ -347,6 +364,7 @@ h2 {
 	border-radius: 5%;
 	width: 550px ;
 	border: 2px solid lightgrey ;
+	width: 500px ;
 }
 
 .photo-select {
@@ -377,4 +395,10 @@ h2 {
 	width: 100px ;
 	border: 1px solid grey;
 	border-radius: 5% ;
+}
+
+/*Registry */
+#registry {
+	margin-top: 150px ;
+	width:400px ;
 }

@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
     else
       if @comment.save
         flash[:success] = "Thank you for your message."
-        redirect_to comments_path
+        redirect_to "/static_pages/registry"
       else
         flash[:error] = "Oops! Something went wrong. Your message was not saved."
         render comments_path

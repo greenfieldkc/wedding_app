@@ -16,7 +16,7 @@ class GuestsController < ApplicationController
       else
         flash[:notice] = "Thank you for responding. See you at the wedding!"
       end
-      redirect_to guests_path
+      redirect_to comments_path
     else
       flash[:notice] = "RSVP not recorded"
       render new_guest_path
