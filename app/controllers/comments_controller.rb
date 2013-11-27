@@ -12,7 +12,11 @@ class CommentsController < ApplicationController
      redirect_to comments_path
    else
       if @comment.save
+<<<<<<< HEAD
         flash[:success] = "Thank you for your message. Don't forget to buy us a gift!"
+=======
+        flash[:success] = "Thank you for your message."
+>>>>>>> jquery
         redirect_to "/static_pages/registry"
       else
         flash[:error] = "Oops! Something went wrong. Your message was not saved."
