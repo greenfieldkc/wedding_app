@@ -1,4 +1,5 @@
 class GuestsController < ApplicationController
+  
   def index
   @head_count = get_head_count
   @alph_list = alphabetize_guests
